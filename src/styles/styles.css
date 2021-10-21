@@ -1,0 +1,70 @@
+.phones {
+    background: url(https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png);
+    min-width: 33%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.screens {
+    position: absolute;
+    z-index: 1;
+    top: 93px;
+    left: 144px;
+    height: 100px;
+    width: 100px;
+    background: #888;
+}
+
+.phoneImg {
+    position: absolute;
+    min-width: 200px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+}
+
+#sign-in-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 600px;
+    background-color: #fff;
+    border: 0 solid #888;
+    border-radius: 20px;
+    box-shadow: 3px 5px 25px #888;
+    padding: 0 70px;
+}
+
+.sign-in-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sign-in-form input {
+    border: 1px solid rgb(240, 236, 236);
+    background-color:rgb(245, 244, 244);
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 20px;
+    border-radius: 5px;
+}
+
+.sign-in-form input[type=submit] {
+    color: #fff;
+    background: rgb(87, 187, 218);
+    font-style: 16px;
+    font-style: bold;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer span {
+    color: #888;
+}
