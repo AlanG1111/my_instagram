@@ -1,19 +1,31 @@
+.main-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .phones {
     background: url(https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png);
-    min-width: 33%;
-    background-size: contain;
+    height: 618px;
+    width: 454px;
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 
-.screens {
+.showing-class {
+    transition: opacity 0.5ms ease;
+    opacity: 1 !important
+}
+
+.screens div {
     position: absolute;
     z-index: 1;
-    top: 93px;
-    left: 144px;
-    height: 100px;
-    width: 100px;
-    background: #888;
+    top: 99px;
+    left: 150px;
+    height: 429px;
+    width: 241px;
+    opacity: 0;
 }
 
 .phoneImg {
@@ -21,27 +33,22 @@
     min-width: 200px;
 }
 
-.main-content {
-    display: flex;
-    justify-content: center;
-}
 
 #sign-in-page-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    min-height: 600px;
-    background-color: #fff;
-    border: 0 solid #888;
-    border-radius: 20px;
-    box-shadow: 3px 5px 25px #888;
-    padding: 0 70px;
+    padding: 80px 0;
 }
 
 .sign-in-form {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    justify-content: center;
+    background-color: #fff;
+    border: 0 solid #888;
+    border-radius: 20px;
+    box-shadow: 3px 5px 25px #888;
+    padding: 0 70px;
 }
 
 .sign-in-form input {
