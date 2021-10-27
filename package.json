@@ -1,0 +1,22 @@
+{
+  "name": "insta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:esbuild": "esbuild ./src/index.js --bundle --minify --outdir=dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlanG1111/my_instagram.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlanG1111/my_instagram/issues"
+  },
+  "homepage": "https://github.com/AlanG1111/my_instagram#readme",
+  "devDependencies": {
+    "esbuild": "^0.13.9"
+  }
+}

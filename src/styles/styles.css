@@ -13,12 +13,7 @@
     position: relative;
 }
 
-.showing-class {
-    transition: opacity 0.5ms ease;
-    opacity: 1 !important
-}
-
-.screens div {
+.screens-img {
     position: absolute;
     z-index: 1;
     top: 99px;
@@ -26,13 +21,16 @@
     height: 429px;
     width: 241px;
     opacity: 0;
+    transition: opacity 3000ms ease;
 }
 
-.phoneImg {
-    position: absolute;
-    min-width: 200px;
-}
+/* .screens {
+    opacity: 1;
+} */
 
+.screens-img-visible {
+    opacity: 1 
+}
 
 #sign-in-page-container {
     display: flex;
