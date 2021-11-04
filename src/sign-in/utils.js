@@ -1,8 +1,9 @@
 import {addingScreenToPhone, createIPhoneBlock} from "./phones"
 import {createFooter} from "./footer"
 import {createSignInForm} from "./sign-in form"
+import { container } from "webpack";
 
-export function render(container) {
+function renderPage() {
     const signInPageContainer = document.createElement("div");
     signInPageContainer.id = "sign-in-page-container"; 
     const mainContainer =  document.createElement("div");
@@ -18,5 +19,15 @@ export function render(container) {
     mainContainer.appendChild(signInForm);
     signInPageContainer.appendChild(mainContainer);
     signInPageContainer.appendChild(footer);
-    container.appendChild(signInPageContainer);
+    
+    return {
+        render(container) {
+        container.appendChild(signInPageContainer);
+        },
+        remove() {
+            signInPageContainer.remove()
+        }
+    }
 }
+
+export const SignInPage = renderPage()

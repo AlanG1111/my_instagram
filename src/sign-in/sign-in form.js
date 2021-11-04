@@ -1,3 +1,4 @@
+import { router } from "../index"
 function createSignInHeading () {
     const heading = document.createElement("h1")
     heading.innerText = "My Instagram"
@@ -43,6 +44,8 @@ export function createSignInForm () {
         });
 
         console.log("values", values);
+
+        router.go("home")
     });
 
     const header = createSignInHeading()
