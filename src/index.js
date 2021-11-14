@@ -1,6 +1,6 @@
 import { createRouter } from "./routing";
 import { APP_ROUTES } from "./routing/router";
-import {render, renderPage} from "./sign-in/utils"
+// import {render, renderPage} from "./sign-in/utils"
 
 export let router = null;
 

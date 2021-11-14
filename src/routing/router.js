@@ -1,4 +1,4 @@
-import SignInPage from "../sign-in/utils";
+import {SignInPage} from "../sign-in/utils";
 
 export const APP_ROUTES = [
     {
